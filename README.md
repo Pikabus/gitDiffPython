@@ -1,9 +1,26 @@
 # Git Diff app
 
-This is an application for ...
+This is an application for check difference of 2 files.
 
-## build and run containers
+## run in CLI
+
+### On windows
 
 ```bash
-docker-compose up -d --build
+cd app
+py main.py
+```
+
+### or
+
+```bash
+cd app
+python main.py
+```
+
+### On Linux
+
+```bash
+cd app
+python3 main.py
 ```
