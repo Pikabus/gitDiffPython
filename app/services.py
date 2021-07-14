@@ -44,14 +44,3 @@ def save_result_of_comparison(file1_name: str, file2_name: str, result_of_compar
         result_file.write(comparison_result)
         result_file_abs_path = os.path.abspath(result_relative_path)
         print(f"Result of the comparison files in {result_file_abs_path}")
-
-
-def check_is_file_text(file_path: str) -> str:
-    file_name = os.path.basename(file_path)
-
-    file_type = mimetypes.guess_type(file_path)
-
-    if file_type[0] and 'text' not in file_type[0]:
-        print(f"{file_name} is not a text file!")
-        sys.exit()
-    return file_path
