@@ -28,7 +28,7 @@ while True:
         file2 = open(file2_path, "r").readlines()
         break
     except UnicodeDecodeError:
-        print(f"{file1_name} is not a text file!")
+        print(f"{file2_name} is not a text file!")
         sys.exit()
     except FileNotFoundError:
         print(f"Error! File {file2_path} doesn't exists!")
