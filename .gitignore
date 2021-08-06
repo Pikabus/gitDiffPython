@@ -1,9 +1,14 @@
+# Folders
 /venv/
 __pycache__/
-files/
-results/
+# files/
+# results/
 
+
+# Files
 Dockerfile
 docker-compose.yml
 
 tests.py
+
+*.exe

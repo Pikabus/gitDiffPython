@@ -1,1 +1,1 @@
-RESULTS_FOLDER_PATH = "../results/"
+PATH_OF_RESULTS_FOLDER = "../results/"
