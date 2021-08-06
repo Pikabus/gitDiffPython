@@ -12,3 +12,4 @@ docker-compose.yml
 tests.py
 
 *.exe
+*.diff
