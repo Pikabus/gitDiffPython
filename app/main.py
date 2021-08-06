@@ -77,8 +77,6 @@ def compare_files(first_file_path: str, second_file_path: str) -> str:
     second_file_content = open(second_file_path, "r").readlines()
     result_of_comparison = list(Differ().compare(first_file_content,
                                                  second_file_content))
-    save_result_of_comparison(first_file_path,
-                              second_file_path, result_of_comparison)
     return result_of_comparison
 
 
@@ -88,4 +86,6 @@ if __name__ == "__main__":
     file_number = "second"
     second_file_path = check_file_exists(file_number)
 
-    compare_files(first_file_path, second_file_path)
+    result_of_comparison = compare_files(first_file_path, second_file_path)
+    save_result_of_comparison(first_file_path,
+                              second_file_path, result_of_comparison)
